@@ -1,4 +1,5 @@
-isim=""
+isim = ""
+
 def cevap_ver(mesaj):
     global isim
     mesaj = mesaj.lower()
@@ -30,6 +31,10 @@ def cevap_ver(mesaj):
     
 
 while True:
-    kullanici = input("Sen: ")
+    kullanici = input("Sen: ")  
+    if kullanici.lower()=="çıkış":
+        print("Bot:Görüşürüz!")
+        break
     cevap = cevap_ver(kullanici)
     print("Bot:", cevap)
+
